@@ -1,0 +1,129 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Homepage {% endblock %}
+
+{% block content %}
+    <!-- Custom styles for this template -->
+      
+    {% if request.COOKIES.mode == "dark" %}
+      <main style="background-color: black;" class="container">
+    {% else %}
+      <main style="background-color: white;" class="container">
+    {% endif %}
+
+    <div class="parent">
+      <img src="{% static 'images/Alula.jpg' %}"  alt="Homepage" style="width:100%; height: 400px;">
+      <div class="text">
+        <h2>Saudi Arabia, The new destination for tourism</h2>
+        <p>
+          Saudi Arabia is the second biggest tourist destination in the Middle East with over 16 million visiting in 2017. Although most tourism in Saudi Arabia still largely involves religious pilgrimages, there is growth in the leisure tourism sector.        </p>
+      </div>
+    </div>
+
+    <div class="row mb-2 mt-5">
+        <!-- Riyadh -->
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+        <div class="row">
+          <div class="col-6">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">Riyadh</h3>
+              <br>
+              <p class="card-text mb-auto">Riyadh is known as the cultural capital of Saudi Arabia due to its numerous cultural centres. Among them are the King ʿAbd al-ʿAzīz Historical Centre, the National Museum, and the National Library...</p>
+              <a href="{% url 'main:riyadh_page' %}" class="stretched-link">See more</a>
+            </div>
+          </div>
+          <div class="col-6" style="height: 50px; width: 50px;">
+            <div class="col-auto d-none d-lg-block">
+              <img src="{% static 'images/riyadh.jpeg' %}"  alt="Homepage" style="height:300px;" >
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <!-- Abha -->
+      <div class="row">
+        <div class="col-6">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Abha</h3>
+            <br>
+            <p class="mb-auto">Abha is home to the highest peak in the Kingdom of Saudi Arabia, which is Jabal Al Souda or Montenegro, It is considered one of the most famous tourist places ...</p>
+            <a href="{% url 'main:abha_page' %}" class="stretched-link">See more</a>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="col-auto d-none d-lg-block">
+            <img src="{% static 'images/abha4.jpeg' %}"  alt="Homepage" style="height:300px;" >          </div>
+        </div>
+        </div>
+      </div> 
+      </div>
+    </div>
+
+
+    <div class="row mb-2">
+        <!-- Mekkah -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="row">
+            <div class="col-6">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0">Mekkah</h3>
+                <br>
+                <p class="mb-auto">Makkah is no doubt the top destination for religious tourism. Approximately 13 million Muslims from all over the world visit Makkah annually...</p>
+                <a href="{% url 'main:mekkah_page' %}" class="stretched-link">See more</a>
+              </div>
+            </div>
+    
+            <div class="col-6">
+              <div class="col-auto d-none d-lg-block">
+                <img src="{% static 'images/mekkah5.avif' %}"  alt="Homepage" style="height:300px; width: 320px;" >          </div>
+            </div>
+            </div>
+          </div> 
+          </div>
+
+        <!-- AlUla -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="row">
+            <div class="col-6">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0">Alula</h3>
+                <br>
+                <p class="mb-auto">AlUla, which is home to Saudi Arabia’s first UNESCO World Heritage Site, deep in the desert in the northwestern region of the country...</p>
+                <a href="{% url 'main:alula_page' %}" class="stretched-link">See more</a>
+              </div>
+            </div>
+    
+            <div class="col-6">
+              <div class="col-auto d-none d-lg-block">
+                <img src="{% static 'images/alula_break_free_landing_page_winter_campaign_1920x1080_4.jpg' %}"  alt="Homepage" style="height:300px;" >          </div>
+            </div>
+            </div>
+          </div> 
+          </div>
+
+        <!-- <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">Alula</h3>
+              <br>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="city/AlUla/" class="stretched-link">See more</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div> -->
+      </div>
+  </main>
+ 
+{% endblock %}

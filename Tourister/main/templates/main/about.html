@@ -1,0 +1,31 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <h3>this website give the Tourism overview about the many places in Saudi Arabia.</h3>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row" style="margin-left: 550px;">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/me.jpg' %}" alt="Hussam_image" style="width:100%">
+      <div class="container">
+        <h2>Hussam Altalib</h2>
+        <p>I made this website to help people who want to visit Saudi Arabia.</p>
+        <p>HussamAltalib@outlook.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</div>
+
+{% endblock %}

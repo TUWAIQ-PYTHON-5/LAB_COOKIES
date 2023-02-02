@@ -1,0 +1,60 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Alula {% endblock %}
+
+{% block content %}
+<div class="parent">
+    <div  id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="{% static 'images/alula1.jpeg'%}" class="d-block w-100" alt="almasmak_image">
+            <div class="carousel-caption d-none d-md-block ">
+                <div class="text " >
+                    <h5>AlUla, thousand of years.</h5>
+                    <p> AlUla Oasis In contrast to the surrounding arid desert, the lush AlUla Oasis has a longstanding history as a place for respit.</p>
+                </div>  
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static 'images/alula2.jpeg'%}"class="d-block w-100" alt="/boulevard_image">
+            <div class="carousel-caption d-none d-md-block">
+            <div class="text " >
+                <h5>AlUla, thousand of years.</h5>
+                <p>The rock outcroppings that dot AlUla’s landscapes are unique and beautifully abstract. There are many ways to explore.</p>
+            </div>  
+            </div>
+        </div>
+        <div class="carousel-item ">
+            <img src="{% static 'images/alula3.jpeg'%}" class="d-block w-100" alt="riyadh_season_image">
+            <div class="carousel-caption d-none d-md-block">
+            <div class="text " >
+                <h5>AlUla, thousand of years.</h5>
+                <p>Often referred to as the largest “open library” in Saudi, Jabal Ikmah features the most extensive and varied collection of pre-Arabic inscriptions.</p>
+            </div> 
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<div style="margin-top: 30px; margin-left: 500px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XrM5Y5ghEHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+  
+{% endblock %}
