@@ -1,0 +1,54 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} AlUla {% endblock %}
+
+{% block content %}
+<div style="background-image: url({% static 'images/AlUla/AlUlaBackground.jpg' %}); background-repeat: no-repeat; background-size: cover; background-position: center center; min-height: 100vh;">
+    <div class="mask rgba-gradient align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-dark text-center text-md-left mt-xl-5 mb-5">
+            <h1 class="h1-responsive font-weight-bold mt-sm-5">Welcome to AlUla</h1>
+            <hr class="hr-light">
+            <h6 class="mb-4">Al-'Ula, sometimes stylized in English as AlUla, 
+                is an ancient Arabic oasis city located in Medina province of northwestern Saudi Arabia.</h6>
+          </div>
+          <div class="col-md-6 col-xl-5 mt-xl-5">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'images/AlUla/alula-elephant-rock.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/AlUla/alula-mountain.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/AlUla/alula-night-sky.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/AlUla/alula-view.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>          
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="d-flex justify-content-center ">
+        <video class="w-75 h-75" controls>
+            <source src="{% static 'videos/AlUla-video.mp4' %}" type="video/mp4">
+        </video> 
+    </div>
+  </div>
+  
+{% endblock %}

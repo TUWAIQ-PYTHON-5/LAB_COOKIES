@@ -1,0 +1,58 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Abha {% endblock %}
+
+{% block content %}
+<div style="background-image: url({% static 'images/abha/abhaBackground.jpg' %}); background-repeat: no-repeat; background-size: cover; background-position: center center; min-height: 100vh;">
+    <div class="mask rgba-gradient align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-dark text-center text-md-left mt-xl-5 mb-5">
+            <h1 class="h1-responsive font-weight-bold mt-sm-5 text-dark">Welcome to Abha</h1>
+            <hr class="hr-light">
+            <h6 class="mb-4 text-dark ">Abha is the capital city of Aseer Province near 
+                the Red Sea in southwest Saudi Arabia. It’s known for the craggy mountains 
+                of Aseer National Park, which is home to birds, dense juniper forests and 
+                the towering Jabal Soodah peak. At the heart of downtown Abha is the 
+                restored mud-walled Shada Castle, now a handicrafts museum. Nearby, the 
+                Al-Muftaha district has stone houses and a weekly market with crafts and curios</h6>
+          </div>
+          <div class="col-md-6 col-xl-5 mt-xl-5">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'images/abha/abha-house.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/abha/abha-lack.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/abha/abha-street.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/abha/abha-mountain.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>          
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="d-flex justify-content-center ">
+        <video class="w-75 h-75" controls>
+            <source src="{% static 'videos/Abha-video.mp4' %}" type="video/mp4">
+        </video> 
+    </div>
+  </div>
+  
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Riyadh {% endblock %}
+
+{% block content %}
+<div style="background-image: url({% static 'images/Riyadh/riyadhBackground.jpg' %}); background-repeat: no-repeat; background-size: cover; background-position: center center; min-height: 100vh;">
+    <div class="mask rgba-gradient align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-white text-center text-md-left mt-xl-5 mb-5">
+            <h1 class="h1-responsive font-weight-bold mt-sm-5">Welcome to Riyadh</h1>
+            <hr class="hr-light">
+            <h6 class="mb-4">Riyadh, Saudi Arabia’s capital and main financial 
+                hub, is on a desert plateau in the country’s center. Business district 
+                landmarks include the 302m-high Kingdom Centre, with a sky bridge 
+                connecting 2 towers, and 267m-high Al Faisaliah Centre, with a 
+                glass-globe summit. In the historical Deira district, Masmak Fort 
+                marks the site of the 1902 raid that gave the Al Sauds control of Riyadh.</h6>
+          </div>
+          <div class="col-md-6 col-xl-5 mt-xl-5">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'images/Riyadh/Riyadh_City.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/Riyadh/Riyadh_Skyline.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/Riyadh/Riyadh-City-Boulevard-2.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/Riyadh/Riyadh-City-Boulevard.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>          
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="d-flex justify-content-center ">
+        <video class="w-75 h-75" controls>
+            <source src="{% static 'videos/Riyadh-video.mp4' %}" type="video/mp4">
+        </video> 
+    </div>
+  </div>
+  
+{% endblock %}

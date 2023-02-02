@@ -1,0 +1,87 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Tourister {% endblock %}
+
+{% block content %}
+  <div style="background-image: url({% static 'images/backgroundSaudiArabia.jpg' %}); background-repeat: no-repeat; background-size: cover; background-position: center center; min-height: 100vh;">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 text-center m-5">
+            <h1 class="font-weight-bold mt-sm-5">Tourism in Saudi Arabia </h1>
+            <hr class="hr-light">
+            <h5 class="mb-4">Saudi Arabia, officially the Kingdom of Saudi Arabia, is a country
+               in Western Asia. It covers the bulk of the Arabian Peninsula, and has a land 
+               area of about 2,150,000 km², making it the fifth-largest country in Asia, 
+               the second-largest in the Arab world, and the largest in Western Asia and the Middle East
+            </h5>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Riyadh
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse text-center text-center" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Riyadh, Saudi Arabia’s capital and main financial 
+                    hub, is on a desert plateau in the country’s center. Business district 
+                    landmarks include the 302m-high Kingdom Centre, with a sky bridge 
+                    connecting 2 towers, and 267m-high Al Faisaliah Centre, with a 
+                    glass-globe summit. In the historical Deira district, Masmak Fort 
+                    marks the site of the 1902 raid that gave the Al Sauds control of Riyadh.</div>
+                  <a href="/city/riyadh/" class="card-link">Learn More</a>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Abha
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse text-center" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Abha is the capital city of Aseer Province near 
+                    the Red Sea in southwest Saudi Arabia. It’s known for the craggy mountains 
+                    of Aseer National Park, which is home to birds, dense juniper forests and 
+                    the towering Jabal Soodah peak. At the heart of downtown Abha is the 
+                    restored mud-walled Shada Castle, now a handicrafts museum. Nearby, the 
+                    Al-Muftaha district has stone houses and a weekly market with crafts and curios</div>
+                  <a href="/city/abha/" class="card-link">Learn More</a>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Mekkah
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse text-center" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Mecca, in a desert valley in western Saudi Arabia, is Islam’s holiest 
+                    city, as it’s the birthplace of the Prophet Muhammad and the faith itself. 
+                    Only Muslims are allowed in the city, with millions arriving for the annual 
+                    Hajj (pilgrimage). Dating from the 7th century, the central Masjid al-Haram 
+                    (Sacred Mosque) surrounds the Kaaba, the cloth-covered cubic structure that’s 
+                    Islam’s most sacred shrine.</div>
+                  <a href="/city/mekkah/" class="card-link">Learn More</a>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    AlUla
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse text-center" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Al-'Ula, sometimes stylized in English as AlUla, 
+                    is an ancient Arabic oasis city located in Medina province of northwestern Saudi Arabia.</div>
+                  <a href="/city/alUla/" class="card-link">Learn More</a>
+                </div>
+              </div>              
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock %}
