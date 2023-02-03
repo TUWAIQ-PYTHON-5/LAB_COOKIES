@@ -1,0 +1,60 @@
+{% extends "main/home.html" %}
+{% load static %}
+{% block background %}
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <h3> Exploring AlUla </h3>
+   
+    <p class = "container fw-lighter" style="text-align: center;width:600px;height:250px;"> There are few places in the world where you can still feel like a true explorer charting the unknown. In many historic destinations,
+        the illusion of discovery is promptly shattered by a jungle of selfie sticks. But in AlUla,
+        which is home to Saudi Arabia's first UNESCO World Heritage Site, deep in the desert in the northwestern region of the country,
+        you might still be able to play out your fantasy of being an intrepid archaeologist for a day.
+        Despite all the makings of a bucket list-topping global destination — ancient tombs that remain as the legacy of 7,000 years of human civilisation,
+        stunning natural rock formations and canyons, a plethora of adventure sports options and cutting-edge art installations — AlUla remains largely off the global tourism radar,
+        giving you plenty of space and time for reflection with the monumentality of its beautiful desert landscapes.</p>
+
+        
+        
+        <div class="container" style="width:640px;height:360px">
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" >
+                <div class="carousel-item active">
+                <img src="{% static 'images/ula4.jpg_large' %}" class="d-block w-1000" alt="Qassim photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/ula.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/ula1.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/ula2.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/ula3.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/ula5.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+</div>
+</div>
+{% endblock %}
+
+
+
+

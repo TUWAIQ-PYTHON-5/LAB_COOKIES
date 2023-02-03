@@ -1,0 +1,63 @@
+{% extends "main/home.html" %}
+{% load static %}
+
+{% block background %}
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <h3> Riyadh - Live the Modern Life to its Fullest </h3>
+   
+    <p class = "container fw-lighter" style="text-align: center;width:600px;height:250px; margin-block-end: 10em; "> In the ever-growing and flourishing city of Riyadh, you will discover the birthplace of the Kingdom of Saudi Arabia,
+        along with its historical treasures hidden in the old palaces that witnessed the founding of the kingdom.
+        It is a destination for tourists from all over the globe who wish to discover a world of shopping,
+        entertainment and business. The malls offer the most exciting shopping experience,
+        and the sand dunes combined with the brightest stars in the sky present the most magical experience in nature.
+        It is an environment full of a natural variety and unique characteristics that are intriguing for explorers.
+        On the other side of the bustling city, you can enjoy a variety of experiences in luxurious restaurants that offer their special services,
+        and their elaborate international dishes. Simultaneously,
+        the local Riyadh restaurants will tempt you with their authentic flavors and blend of spices originating from Saudi culture.
+        Everyone is happy in the city of Riyadh where the biggest cultural events are always celebrated.
+        Endless entertainment destinations are always emerging,
+        for the city's visitors to have intriguing and renewing experiences.</p>
+    
+        <div class="container" style="width:640px;height:360px">
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" >
+                <div class="carousel-item active">
+                <img src="{% static 'images/r1.jpg' %}" class="d-block w-1000" alt="Qassim photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/r2.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/r3.jpeg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/r4.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+                <div class="carousel-item ">
+                <img src="{% static 'images/r5.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                </div>
+                    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+</div>
+
+</div>
+
+
+
+{% endblock %}
+

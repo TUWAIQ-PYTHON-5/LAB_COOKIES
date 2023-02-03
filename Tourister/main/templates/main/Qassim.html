@@ -1,0 +1,60 @@
+{% extends "main/home.html" %}
+{% load static %}
+{% block background %}
+{% endblock %}
+ 
+    {% block content %}
+
+
+    <div >
+
+        <h3> Exploring Saudi's Qassim Region </h3>
+    
+            <p class = "container fw-lighter" style="width:600px;height:250px;"> One of the kingdom's 13 provinces, the Qassim region is known for its wheat, which it exports heavily, and its dates,
+            which are popular throughout the country.Perhaps this is why Qassim is also called the “food basket” of the country.
+            The area is actually relatively rich in water and has soil and a climate that is suitable for growing most crops,
+            including grapes, oranges, lemons, grapefruit, mandarin oranges, pomegranates and many vegetables.
+            The main market in Buraydah,the province's capital city (which is inhabited by approximately 60 percent of the region's total population),
+            offers a variety of dates year-round. If you're visiting at the end of the summer, you might catch the annual Buraydah Date Festival,
+            a 35-day event, which draws farmers and tourists from neighboring regions and countries every year to sell dates and date by-products, 
+            like date syrup. Qassim has a desert climate, with long, hot summers and short, mild winters,
+            and there's little precipitation, so it's a great place to get out and explore.</p>
+
+            <div class="container" style="width:640px;height:360px">
+
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" >
+                    <div class="carousel-item active">
+                    <img src="{% static 'images/qas1.jpg' %}" class="d-block w-1000" alt="Qassim photos" style="width:640px;height:360px">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="{% static 'images/qassim3.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="{% static 'images/qassim4.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="{% static 'images/qas2.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="{% static 'images/qas5.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                    </div>
+                    <div class="carousel-item ">
+                    <img src="{% static 'images/qas3.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+    </div>
+
+    {% endblock %}
+
+
