@@ -1,0 +1,73 @@
+{% extends "Main/main_temp.html" %}
+{% load static %}
+{%block title%}Abha City{%endblock%}
+
+{%block content%}
+    
+<div class="container mb-2">
+    <div class="m-5 ">
+        <h1>
+            Abha City 
+        </h1>
+        <h4>
+            Part of the marvel of the trip to Abha, which is full of breath-taking natural sights,
+            <br> is seeing its fog that penetrates its mountains and touches its land in Al-Dabab Walkway, which spans over 7 km.
+            <br> This experience, amidst a panoramic painting that showcases the greenery of the Sarawat Mountains, is worth travelling for.
+        </h4>
+    </div>
+    
+    <div id="hero-carousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        
+    <div class="carousel-inner">
+
+      <div class="carousel-item active s-item">
+        <img src="{% static 'img/abha1.jpg' %}" class="d-block w-100 s-img" alt="..."/>
+        <div class="carousel-caption">
+            <h3>Mountain trips in Abha</h3>
+            <h5>On the mountain roads, the environment will not disappoint you with its richness and diversity,
+            <br> and when the road takes you to the tops of the mountains, you will see majestic views. 
+            <br> Be prepared to take many wonderful pictures, especially when the lines of monkeys appear on the side of the road.
+            </h5>
+        </div>
+      </div>
+
+      <div class="carousel-item s-item">
+        <img src="{% static 'img/abha2.jpg' %}" class="d-block w-100 s-img" alt="..."/>
+        <div class="carousel-caption">
+            <h3>Abha tourism: a cable car adventure</h3>
+            <h5>A trip to Abha wouldn’t be complete without a ride on the town’s iconic cable cars,
+            <br>with panoramic views of the surrounding Sarawat Mountains.
+            </h5>
+        </div>
+      </div>
+
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  <div class="row mb-5">
+    <h3 class="mt-3 mb-5">
+        We invite you to watch video for city
+    </h3>
+    <iframe width="360" height="720" src="https://www.youtube-nocookie.com/embed/ejGdiIy-xws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+</div>
+
+</div>
+  {%endblock%}
+  

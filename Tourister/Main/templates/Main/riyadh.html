@@ -1,0 +1,79 @@
+{% extends "Main/main_temp.html" %}
+{% load static %}
+{%block title%}Riyadh City{%endblock%}
+
+{%block content%}
+    
+<div class="container mb-2">
+    <div class="m-5 ">
+        <h1>
+            Riyadh City 
+        </h1>
+        <h4>
+            Live the Modern Life to its Fullest
+        </h4>
+    </div>
+    
+    <div id="hero-carousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+    <div class="carousel-inner">
+
+      <div class="carousel-item active s-item">
+        <img src="{% static 'img/twaq.jpg' %}" class="d-block w-100 s-img" alt="..."/>
+        <div class="carousel-caption">
+          <h3>Edge of the World</h3>
+          <h5>edge of the world
+            One of the most dangerous mountain edges in the world,
+            <br> and it is the end of the "Tuwaiq Mountains" range, and also one of the most beautiful views</h5>
+        </div>
+      </div>
+
+      <div class="carousel-item s-item">
+        <img src="{% static 'img/masmak.jpg' %}" class="d-block w-100 s-img" alt="..."/>
+        <div class="carousel-caption">
+          <h3>Masmak Fortress</h3>
+          <h5>The Masmak Fort, also called the Masmak Fortress or Masmak Palace,
+            <br> is a clay and mudbrick fort in ad-Dirah, Riyadh, located in close proximity to the Justice Palace</h5>
+        </div>
+      </div>
+
+      <div class="carousel-item s-item">
+        <img src="{% static 'img/fiorenza-la-piazza-in-riyadh.jpg' %}" class="d-block w-100 s-img" alt="..."/>
+        <div class="carousel-caption ">
+          <h3>Fiorenza La Piaza</h3>
+          <h5>Fiorenza La Piazza Mall is suitable for those who love shopping activities that also include having some fresh baked goods or a cup of coffee.
+            <br> Its restaurants and cafes overlook the city through glass windows that show the elegance and attractiveness of Riyadh, it also has a range of different shops in the middle of it.</h5>
+        </div>
+      </div>
+
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  <div class="row mb-5">
+    <h3 class="mt-3 mb-5">
+        We invite you to watch video for city
+    </h3>
+      <iframe width="560" height="615" src="https://www.youtube-nocookie.com/embed/E7fdZQGZm2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+</div>
+
+</div>
+  {%endblock%}
+  

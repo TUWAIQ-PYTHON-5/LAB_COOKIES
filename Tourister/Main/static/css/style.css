@@ -1,0 +1,37 @@
+*{
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+}
+.light{
+    background-color: aliceblue;
+}
+.dark{
+    background-color: rgb(52, 62, 62);
+    color: white;
+}
+.image_back{
+    background-image: url('../img/main_img.jpg');
+    min-height: 100vh;
+}
+.textColor{
+    color: burlywood;
+}
+.main_message{
+    position:relative; 
+    top:50%;
+    left:30%; 
+}
+.s-img{
+    height: 680px;
+}
+.s-item{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+.s-color{
+    color: grey;
+}
+
+.abs{
+    position: absolute;
+}

@@ -1,0 +1,80 @@
+{% extends "Main/main_temp.html" %}
+{% load static %}
+{%block title%}AlUla City{%endblock%}
+
+{%block content%}
+
+<div class="container mb-2">
+        <div class="m-5 ">
+            <h1>
+                AlUla City 
+            </h1>
+            <h4>
+                Take a journey through time in the world's largest living museum.
+            </h4>
+        </div>
+        
+    <div id="hero-carousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+    <div class="carousel-inner">
+
+      <div class="carousel-item active s-item">
+        <img src="{% static 'img/alula1.jpg' %}" class="d-block w-100 s-img" alt="..."/>
+        <div class="carousel-caption">
+            <h3>Tomb of Lihyan</h3>
+            <h5>Explore one of Hegra’s most recognisable and photographed features.
+            <br>This iconic single tomb is cut into an isolated sandstone outcrop.</h5>  
+        </div>
+      </div>
+
+      <div class="carousel-item s-item">
+        <img src="{% static 'img/elephant_rock.jpg' %}" class="d-block w-100 s-img" alt="..."/>
+        <div class="carousel-caption">
+            <h3>Elephant Mountain</h3>
+            <h5>Take a seat in our comfortable and stylish sunken seating at Elephant Rock!
+            <br>Sit back and enjoy the view of AlUla's most famous geological formation,
+            <br>Elephant Rock, as she looms large over you. </h5>  
+        </div>
+      </div>
+
+      <div class="carousel-item s-item">
+        <img src="{% static 'img/4x4Safari.jpg' %}" class="d-block w-100 s-img" alt="..."/>
+        <div class="carousel-caption ">
+          <h3>4x4 Safari Tour</h3>
+          <h5>
+            Take a seat in a vintage 4x4 vehicle for a three-and-a-half hour tour across the Sharaan Nature Reserve.
+            <br> Your professional guide will take you on a journey exploring some of AlUla’s most magnificent wonders from unique rock formations to ancient inscriptions,
+            <br> make sure to keep an eye out for different species of animals along the way.</h5>
+        </div>
+      </div>
+
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  <div class="row mb-5">
+        <h3 class="mt-3 mb-5">
+            We invite you to watch video for city
+        </h3>
+        <iframe width="560" height="720" src="https://www.youtube-nocookie.com/embed/nG8jcH2rAjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+    
+    </div>
+{%endblock%}

@@ -4,3 +4,4 @@
 ### apply the dark / light mode in your website.
 - The user can choose which mode.
 - Save the user choice in a cookie.
+s
