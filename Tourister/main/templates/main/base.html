@@ -1,0 +1,112 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} Tourister {% endblock%}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      .light{
+        background-color: aliceblue;
+        color: black;
+      }
+      .dark{
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+</head>
+  <body class="{{ request.COOKIES.mode }}"  >
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              <span class="fs-4">Tourister</span>
+            </a>
+      
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="{% url 'main:home_page'%}" class="nav-link" aria-current="page">Home</a></li>
+              <li class="nav-item"><a href="{% url 'main:Riyadh_page' %}" class="nav-link">Riyadh</a></li>
+              <li class="nav-item"><a href="{% url 'main:Abha_page' %}" class="nav-link">Abha</a></li>
+              <li class="nav-item"><a href="{% url 'main:Mekkah_page' %}" class="nav-link">Mekkah</a></li>
+              <li class="nav-item"><a href="{% url 'main:AlUla_page' %}" class="nav-link">AlUla</a></li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <a href="{% url 'main:mode_dark'%}" class="btn {% if request.COOKIES.mode == 'dark'%} btn-primary {% else %} btn-secondary {% endif %}">Dark</a>
+              <a href="{% url 'main:mode_light'%}" class="btn {% if request.COOKIES.mode == 'light'%} btn-primary {% else %} btn-secondary {% endif %}">Light</a>
+            </div>
+        </header>
+        {% block content %}
+        
+         
+          
+         
+        <div  >
+          <img style="background-repeat: no-repeat;
+          background-size: cover; "  src="{% static 'images/ksa.jpg' %}" class="img-fluid" alt="...">
+
+
+
+
+
+
+          
+            
+            <h1 class="display-4 fst-italic">A uniquely Saudi experience awaits in winter</h1>
+            <p class="lead my-3">Discover an exciting range of activities and Saudi destinations that are perfect for the cooler months of the year. Experience the thrill of Riyadh Seasons, the world's largest lifestyle festival, with a huge variety of entertainment and events for the whole family.
+
+              Enjoy the temperate climate of the Red Sea for winter sun, sand and marine adventure. Explore Saudi's national parks</p>
+            <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+          
+        </div>
+       </div>
+       <div class="container d-flex justify-content-between">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/Riyadh-season-2022.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Riyadh</h5>
+            
+            <a href="{% url 'main:Riyadh_page' %}" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/abha22.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">abha</h5>
+            <p class="card-text"></p>
+            <br>
+            <br>
+            <a href="{% url 'main:Abha_page' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/alula.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AlUla</h5>
+            <br>
+            
+            <a href="{% url 'main:AlUla_page' %}" class="btn btn-primary">Read More</a>
+            
+
+          </div>
+        </div>
+
+         <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/mekkahone.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mekkah</h5>
+            <br>
+            
+            <a href="{% url 'main:Mekkah_page' %}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+       </div>
+        {% endblock %}
+    </div>
+  </div>
+   
+  </body>
+</html>
