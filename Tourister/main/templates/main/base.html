@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>ًWelcome to Saudi Arabia !</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  
+</head>
+<body>
+  {% if request.COOKIES.mode == "dark" %}
+     <body style="background-color: black; color: gray;" >
+  {% else %}
+     <body style="background-color: white; color: black;" >
+  {% endif %}
+  <div class="container">
+    <div class="text-center">
+<a href={% url 'main:set_dark' %}  class="btn btn-dark col-1">Dark</a>
+<a href={% url 'main:set_light' %}  class="btn btn-light col-1 ">Light</a>
+</div> 
+</div>
+</div>
+    <div class="container-fluid ">
+        <nav class="navbar navbar-primary bg-success">
+            <div class="container-fluid">
+                <a href={% url 'main:home_page' %} class="nav-link" href="#">Home</a>
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href={% url 'main:abha_page' %} class="nav-link active" aria-current="page" href="#">Abha</a>
+                    <a href={% url 'main:mekkah_page' %} class="nav-link" href="#">Mekkah</a>
+                    <a href={% url 'main:alula_page' %} class="nav-link" href="#">Alula</a>
+                    <a href={% url 'main:riyadh_page' %} class="nav-link" href="#">Riyadh</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+            
+        </div>
+    </div>
+   
+
+    {% block content %}
+    
+    <p class="text-success fs-0.7" style="padding: 0.5cm; ">Saudi Arabia is a beautiful country known for being one of the most prominent tourist destinations in the Middle East.</p>
+    <p class=" text-success fs-0.5" style="padding: 0.5cm;">Saudi Arabia is the second biggest tourist destination in the Middle East with over 16 million visiting in 2017. Although most tourism in Saudi Arabia still largely involves religious pilgrimages, there is growth in the leisure tourism sector. As the tourism sector has been largely boosted lately, the sector is expected to be the white oil for Saudi Arabia. This is proved as tourism sector is expected to generate $25 billion in 2019. Potential tourist areas include the Hijaz and Sarawat Mountains, Red Sea diving and a number of ancient ruins.</p>
+<div class="container-fluid">
+    <img src="{% static 'image/saudi.jpg' %}" style="padding: 0.1cm; height: 200px;width: 1300px; "/>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </div>
+    {% endblock %}
+  
+
+    <div class="container fixed-bottom position-left" style="height: 30%; width: 30%;">
+        <div class="card text-center">
+            <div class="card-header" >
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a class="btn btn-primaryy">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+            
+              
+            
+            
+            
+               
+</body>
+</html>
