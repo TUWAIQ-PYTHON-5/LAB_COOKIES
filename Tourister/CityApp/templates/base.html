@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script> -->
+
+    <style>
+    header.masthead {
+        padding-top: 10.5rem;
+        padding-bottom: 30rem;
+        text-align: center;
+        color: #fff;
+        background-image: url("{% static 'images/ksa-2.jpg' %}");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+
+
+    .light {
+
+    }
+
+    .dark {
+
+        background-color: rgb(39, 37, 37);
+        color: white;
+    }
+
+</style>
+    
+
+    
+
+
+    <title>Tourism</title>
+  </head>
+  <body class="{{ request.COOKIES.mode }}">
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" a /></a> -->
+        <a class="navbar-brand"><h1>Tourism</h1></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8000/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li>
+              <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <a href="{% url 'city:dark_mode' %}" class="btn nav-link {% if request.COOKIES.mode == 'dark'%} btn-outline-dark {% else %} btn-outline-secondary {% endif %}"
+                  >Dark</a
+                >
+                <a
+                  href="{% url 'city:light_mode' %}"
+                  class="btn  nav-link {% if request.COOKIES.mode == 'light'%} btn-outline-dark {% else %} btn-outline-secondary {% endif %}"
+                  >Light</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading text-uppercase">
+          <h2>Welcome To Saudia Arabia</h2>
+        </div>
+        <div class="masthead-heading text-uppercase">
+          <h2>It's Nice To Meet You</h2>
+        </div>
+      </div>
+    </header>
+
+    {% block content %} {% endblock %}
+
+    <hr />
+
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Copyright &copy; Tourism 2023
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="link-dark text-decoration-none me-3" href="#!"
+              >Privacy Policy</a
+            >
+            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
