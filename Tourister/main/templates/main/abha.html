@@ -1,0 +1,46 @@
+{% extends "main/base.html" %}
+
+{% load static %}
+{% block title %} Abha Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;">ابها عاصمة السياحة العربية</h3></p>
+
+ <div class="container" style="width:640px;height:360px">
+    
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item ">
+         <img src="{% static 'images/abha1.jpeg' %}" class="d-block w-5" alt="Abha photos" style="width:640px;height:360px">
+       </div>
+       <div class="carousel-item active">
+         <img src="{% static 'images/ab2.jpg' %}" class="d-block w-100" alt="Abha photos" style="width:640px;height:360px">
+       </div>
+       <div class="carousel-item">
+         <img src="{% static 'images/ab3.jpg' %}" class="d-block w-100" alt="Abha photos" style="width:640px;height:360px">
+       </div>
+       </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ </div>
+
+<p class = "container fw-lighter" style="text-align: center;width:800px;height:300px; padding: 20px;">
+
+  تمتلك مدينة أبها موقعًا مثاليًّا في جنوب غربي السعودية، على ارتفاع 2200م بين قمم جبال السروات، حيث يمنحك موقعها فرصة معانقة السحاب، والتجول بين قممها الجبلية، مترعًا بالدهشة والانبهار، فيما تنتقل عبر أزمنة تتجاوز مئات السنين، عند مشاهدة القلاع والقصور المشيدة من مكونات بيئتها البكر. ومع مناورات الضباب وظهوره حتى في فصل الصيف، لن يمنعك ذلك من اكتشاف سهولها ومنحدراتها وتنوعها الثري، والتعرف عن كثب على مجتمعها المسكون بالفنون، وكيف تمكنت النساء هنا، منذ مئات السنين، من استخلاص الألوان الزاهية من الأشجار والحجارة، ليُعدن صياغة المساحات وتزيين ديكورات منازلهنّ بفن القَطّ العسيري، أحد الفنون التجريدية، الذي تحول إلى أيقونة عالمية تعبر عن الإنسان والمكان. في أبها، يمكنك الإنصات للحكايات القديمة، وأنت تتجول عبر البيوت الأثرية المشيدة منذ مئات السنين، والتي حوّلها أصحابها إلى متاحف مشرعة للعالم، وفي الوقت نفسه يمكنك تذوق الماضي عبر خيارات الأكلات الشعبية التي يقدمها أصحاب المتاحف كتجربة حسّية ثرية مرافقة لزيارتك لها، ولا تغادر قبل الحصول على تذكارات منقوشة بفنّ القَطّ العسيري، الذي أدرجته اليونسكو عام 2017م ضمن قائمتها للتراث الثقافي غير المادي، وهكذا ستغادر أبها ويبقى أثرها عميقًا في ذاكرتك.    
+  </p>
+
+  <div class="container" style="text-align: center;width:800px;height:400px; padding: 5px;">
+    <iframe width="684" height="385" src="https://www.youtube.com/embed/oxV2eDms08s" title="العربية معرفة | أبها.. عروس الجنوب وجنة المصائف العربية" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+    {% endblock %}

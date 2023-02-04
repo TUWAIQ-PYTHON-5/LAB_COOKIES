@@ -1,0 +1,52 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %} Alula Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter"  style="text-align: center; padding: 20px; margin: 15;"> هنا العلا ... حاضنة للجمال الطبيعي والتراث الإنساني الفريد
+</h3></p>
+    
+<div class="container" style="width:640px;height:360px">
+    
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/a1.jpg' %}" class="d-block w-5" alt="Al-aula photos" style="width:640px;height:360px">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/a2.jpg' %}" class="d-block w-100" alt="Al-aula photos" style="width:640px;height:360px">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/a3.jpg' %}" class="d-block w-100" alt="Al-aula photos" style="width:640px;height:360px">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/a4.jpeg' %}" class="d-block w-100" alt="Al-aula photos" style="width:640px;height:360px">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/a5.webp' %}" class="d-block w-100" alt="Al-aula photos" style="width:640px;height:360px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<p class = "container fw-lighter" style="text-align: center; width:800px;height:300px; padding: 20px;">
+  عبر آلاف السنين كانت المنطقة الواقعة شمال غرب المملكة العربية السعودية، وجهه لكل من أراد الاستفادة من الموارد الوفيرة التي تجود بخيراتها أخصب الأودية في المملكة. وكانت العلا إحدى تلك الأودية حتى أصبحت ملتقىً حيوياً على طول طرق تجارة البخور الشهيرة الممتدة من جنوب شبه الجزيرة العربية شمالاً باتجاه مصر وما بعدها. حيث انتشرت في أرجائها الواحات الخضراء التي رحبّت بضيوفها من المسافرين ووفرت لهم الماء الغذاء وجميع سبل الراحة، فذاع صيتها بين المسافرين حتى غدت محطة يضعون فيها رحالهم ويجددون نشاطهم. وتميّزت العلا أيضًا بأنها احتضنت عاصمة مملكتي دادان ولحيان القديمتين، اللتين كانتا تسيطران على تجارة القوافل. وكان موقع الحِجْر الذي يشكل العاصمة الجنوبية للمملكة النبطية التي اشتهرت بواجهاتها الصخرية المنحوتة والباقية شامخة حتى يومنا هذا. واليوم، تعد البلدة القديمة في العلا بأزقتها المتقاربة وبيوتها المتجاورة شاهدًا على تراث أهلها، تجاورها واحات النخيل وما تبقى من آثار العيون المائية التي كانت تمد أهالي العلا ومزارعهم بالمياه طوال العام. ولم تكشف هذه الواحة المترامية الأطراف سوى عن جزء ضئيل من ثرواتها الطبيعية والأثرية التي سكنتها الجماعات البشرية عبر آلاف السنين. حيث لا زالت هناك طبقات من التاريخ البشري وثروة من العجائب الطبيعية تنتظر استكشافها في تلك التشكيلات الصخرية الرائعة والكثبان الرملية والآثار المعمارية المثيرة للاهتمام والتي تنقل صوراً من حياة الثقافات القديمة  التي شيّدت تلك المدن.
+</p>
+
+<div class="container" style="text-align: center;width:800px;height:400px; padding: 5px;">
+  <iframe width="684" height="385" src="https://www.youtube.com/embed/4pcTUoS3yKQ" title="AlUla. Saudi Arabia’s hidden gem." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+    {% endblock %}

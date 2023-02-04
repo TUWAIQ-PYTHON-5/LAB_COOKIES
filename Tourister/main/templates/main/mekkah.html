@@ -1,0 +1,40 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %} Mekkah Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;">  (أطهر بقعة على وجه الأرض  (مكة المكرمة</h3></p>
+
+    
+ <div class="container" style="width:640px;height:360px;padding: 15px;">
+    
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item ">
+         <img src="{% static 'images/m1.jpg' %}" class="d-block w-5" alt="Mekkah photos" style="width:640px;height:360px">
+       </div>
+       <div class="carousel-item active">
+         <img src="{% static 'images/m2.jpg' %}" class="d-block w-100" alt="Mekkah photos" style="width:640px;height:360px">
+       </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ </div>
+
+ <p class = "container fw-lighter" style="text-align: center;width:600px;height:250px; padding: 20px;">
+  
+  مهوى أفئدة المسلمين في شتى أرجاء الأرض، مهبط الوحي وموقع المسجد الحرام المبارك، وكعبته المشرفة، مقصد ملايين الحجاج والمعتمرين والزائرين، أطهر بقعة على وجه الأرض، قد خصها الله تعالى في كتابه العزيز بالتكريم ، وذكرها بأسماء عديدة بلغت أحد عشر اسماً، ومن هذه الأسماء: مكة، وبكة، والبلد الآمن، والبلد الأمين، والحرم الآمن، وأم القرى، كما أشار إليها في مواقع عديدة بأسماء أخرى، وأقسم بها، وأعطاها ما لم تحظ به آية مدينة في الدنيا. وشاء جلت قدرته، أن تكون الكعبة المشرفة، والمسجد الحرام، فيها فكانت لهذه المشيئة آثارها ونتائجها من حيث بناء مكة، وتعميرها، وسكانها. وفي ظاهر مكة نزل الوحي الإلهي على رسول الله صلى الله عليه وسلم بأول سور القرآن الكريم، وتوالى الوحي بعد ذلك حتى عرفت بعض آيات القرآن الكريم بالمكية، وهي التي نزلت في مكة المكرمة والمدنية، وهي التي نزلت في المدينة المنورة
+
+  </p>
+
+
+    {% endblock %}

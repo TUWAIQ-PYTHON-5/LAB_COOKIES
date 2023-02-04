@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Tourister in Saudi Arabia  {% endblock %}
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      .light{
+        background-color: antiquewhite;
+        color: black;
+      }
+      .dark{
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+
+ 
+
+</head>
+<body class="{{ request.COOKIES.mode }}">
+  
+
+
+    {% block content %}
+
+
+    <h1 class = "fw-lighter" style=" text-align: center; padding: 20px; margin: 15; ">السياحة في السعودية </h1>
+    
+    <p>
+        <h6 style="text-align: center;">Saudi Arabia is the best </h6>
+       </p>
+   
+    
+   
+    <img src="{% static 'images/saudi.jpg' %}" class="rounded mx-auto d-block w-100" alt="..." />
+
+
+    <p class = "container fw-lighter" style="text-align: center;width:800px;height:150px; padding: 20px;">
+       السياحة في السعودية هي أحد القطاعات الناشئة ذات النمو السريع، وتمثل أحد المحاور المهمة لرؤية السعودية 2030. 
+        وإضافة للمكنوز التاريخي والتراثي والتنوع الطبيعي والثقافي للسعودية،
+        تعد أرضها مهد الدين الإسلامي ما يجعلها محل جذب سياحي، حيث يقصد المسجد الحرام والمسجد النبوي ملايين المسلمين لأداء فريضة الحج ومناسك العمرة، وجاءت المملكة أول الوجهات العربية تفضيلا من قبل السياح المسلمين ورابعها عالميًا ضمن قائمة الوجهات العشر الأولى الأكثر زيارة من قبل السياح المسلمين، من بين 130 بلدًا بحسب تقرير المؤشر العالمي للسياحة الإسلامية لسنة 2019م
+       </p>
+
+
+   
+     
+    {% endblock %}
+      
+
+
+    <nav class= "container nav justify-content-center" style="background-color: white; width:640px;height:40px">
+    <a class="nav-link active" aria-current="page" href="{% url 'main:base_page' %}">Home</a>
+    <a class="nav-link" href="{% url 'main:riyadh_page' %}">Riyadh</a>
+    <a class="nav-link" href="{% url 'main:abha_page' %}">Abha</a>
+    <a class="nav-link" href="{% url 'main:mekkah_page' %}">Mekkah</a>
+    <a class="nav-link" href="{% url 'main:alula_page' %}">Alula</a>
+    </nav>
+     <!--cookies-->
+     <p class="container" style="text-align:center; padding: 5px;" >
+      Swich To Dark Mode :
+     <div class="toggle btn-group container nav justify-content-center" role="group" aria-label="Basic mixed styles example" >
+     <a  aria-current="page" href="{% url 'main:mode_dark'%}" class="btn {% if request.COOKIES.mode == 'dark'%} btn-primary {% else %} btn-secondary {% endif %}">Dark</a>
+     <a  aria-current="page" href="{% url 'main:mode_light'%}" class="btn {% if request.COOKIES.mode == 'light'%} btn-primary {% else %} btn-secondary {% endif %} width:5px;">Light</a>
+   </div>
+  </p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %} Riyadh Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;">عاصمة المملكة العربية السعودية الرياض</h3></p>
+ 
+
+    
+<div class="container" style="width:640px;height:360px">
+    
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" >
+      <div class="carousel-item active">
+        <img src="{% static 'images/r1.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'images/m2_r.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'images/m_r.jpg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'images/mm_r.jpeg' %}" class="d-block w-1000" alt="Riyadh photos" style="width:640px;height:360px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<p class = "container fw-lighter" style="text-align: center;width:800px;height:400px; padding: 20px;">
+  الرياض هي عاصمة المملكة العربية السعودية،  وأكبر مدنها وثالث أكبر عاصمة عربية من حيث عدد السكان. تقع الرياض وسط شبه الجزيرة العربية في هضبة نجد، على ارتفاع 600 متر فوق مستوى سطح البحر. وهي مقر إمارة منطقة الرياض حسب التقسيم الإداري للمناطق السعودية. يسكن مدينة الرياض نحو 10.5 مليون نسمة وفق إحصائيات عام 2021. وتعتبر العاصمة السعودية إحدى أسرع مدن العالم توسعًا،  فخلال نصف قرن من نشأتها اتسعت مساحة المدينة الصغيرة إلى 1800 كيلو متر مربع، حتى بلغت 3.115 كم2. في الوقت الحاضر.
+
+اكتسبت الرياض أهمية تاريخية وسياسية وتجارية منذ أن كانت مدينة قديمة، وعاصمة لإقليم اليمامة تسمى (حجر). وبعد مرور 90 عام على اختيارها كعاصمة للدولة السعودية الثانية ثم الثالثة،  كانت الرياض ومازالت مسرحاً للعديد من الأحداث السياسية والاقتصادية والثقافية. حيث نالت لقب عاصمة الثقافة العربية في عام 2000، وعاصمة الإعلام العربي في 2019. واستضافت العديد من المؤتمرات والقمم المحلية والخليجية والعربية والعالمية. كانت آخرها قمة الرياض 2017، والقمة الخليجية 2018  وفي نوفمبر 2020 استضافت وترأست قمة العشرين.وفي ديسمبر 2022، استضافت الرياض القمة الخليجية الصينية للتعاون والتنمية.
+
+الرياض واجهة السعودية السياسية والاقتصادية، حيث تحتوي على مقرات المؤسسات السيادية في الدولة، كمجلسي الوزراء والشورى، إضافة للوزارات والهيئات الحكومية والعسكرية. وهي عبارة عن مركز مالي حيوي يضم هيئة السوق المالية والسوق المالية السعودية ومقرات المصارف وشركات الاستثمار. يقدر الناتج المحلي للرياض بـ 60 مليار ريال،  وتشكل المدينة ساحة عمل مفتوحة لعدد من المشاريع الكبرى القائمة في السعودية، كمركز الملك عبدالله المالي ومشروع مترو الرياض. كما تعتبر وجهة يقصدها المواطنون والمقيمون للبحث عن الأعمال، ويتركز فيها 23% من قوة العمل في السعودية،  حيث وصل حجم القوة العاملة فيها عام 2016 إلى 4.3 ملايين عامل.
+</p>
+
+<div class="container" style="text-align: center;width:800px;height:400px; padding: 5px;">
+  <iframe width="684" height="385" src="https://www.youtube.com/embed/A3zYMTta2LA" title="تخيل ( قلب الرياض ) - راشد الماجد ٢٠١٩ / حصريا ( موسم الرياض )" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+
+    {% endblock %}
