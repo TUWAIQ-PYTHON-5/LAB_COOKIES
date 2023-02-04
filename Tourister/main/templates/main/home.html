@@ -1,0 +1,84 @@
+<!doctype html>
+{% load static %}
+
+<html lang="en">
+
+ <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+      <style>
+        .light{
+          background-color: antiquewhite;
+          color: black;
+        }
+        .dark{
+          background-color: black;
+          color: aliceblue;
+        }
+      </style>
+  
+ </head>
+ <body class="{{ request.COOKIES.mode }}">
+        <div class="p-3 mb-2 bg-success text-white">
+
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                <img src="{% static 'images/ksa.jpeg' %}" alt="Logo" width="100" height="40" class="d-inline-block align-text-top"/>
+                
+                </a>
+                </div>
+            </nav>
+            <h1 class="text-center">Let's go to visit Saudi Arabia</h1>
+            
+        </div>
+
+        <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title">Tabuk City</h5>
+              <p class="card-text">The city of Tabuk, the seat of the Emirate of the Tabuk region and the largest city in northern Saudi Arabia, and around it are some of the most important antiquities in the Arabian Peninsula. The Tabuk region is the northern gateway to the Arabian Peninsula, and a vital route for trade, pilgrims and Umrah performers from outside the Arabian Peninsula. It is one of the important agricultural areas in the Kingdom.</p>
+              <a href="http://127.0.0.1:8000/city/Tabuk/" class="btn btn-primary">watch more</a>
+            </div>
+        </div>
+          
+        <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title">Makkah City</h5>
+              <p class="card-text">Makkah Al-Mukarramah is the holiest city for Muslims, it contains the Grand Mosque, and the Kaaba, which is the kiss of Muslims in their prayers.</p>
+              <a href="http://127.0.0.1:8000/city/Makkah/" class="btn btn-primary">watch more</a>
+            </div>
+        </div>
+
+          <div class="card w-50">
+            <div class="card-body">
+                <h5 class="card-title">Albaha City</h5>
+                <p class="card-text">Al-Baha region is one of the three administrative regions that make up the Kingdom of Saudi Arabia.</p>
+                <a href="http://127.0.0.1:8000/city/Albaha/" class="btn btn-primary">watch more</a>
+            </div>
+          </div>
+
+          <div class="card w-50">
+            <div class="card-body">
+                <h5 class="card-title">Alola City</h5>
+                <p class="card-text">Al-Ula is one of the cities of the Kingdom of Saudi Arabia, located in the northwest of the Kingdom, and administratively affiliated to the Emirate of Al-Madinah Al-Munawwarah Region, approximately 300 km north from the center of the Emirate, and the capital of Al-Ula Governorate. Human settlement is about 4,000 years old, and it is one of the most important tourist destinations in Saudi Arabia.</p>
+                <a href="http://127.0.0.1:8000/city/Alola/" class="btn btn-primary">watch more</a>
+            </div>
+          </div>
+
+          <!--cookies-->
+     <p class="container" style="text-align:center; padding: 5px;" >
+      Swich To Dark Mode :
+     <div class="toggle btn-group container nav justify-content-center" role="group" aria-label="Basic mixed styles example" >
+     <a  aria-current="page" href="{% url 'main:mode_dark'%}" class="btn {% if request.COOKIES.mode == 'dark'%} btn-primary {% else %} btn-secondary {% endif %}">Dark</a>
+     <a  aria-current="page" href="{% url 'main:mode_light'%}" class="btn {% if request.COOKIES.mode == 'light'%} btn-primary {% else %} btn-secondary {% endif %} width:5px;">Light</a>
+   </div>
+  </p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+      
+    </body>
+      
+  </html>
