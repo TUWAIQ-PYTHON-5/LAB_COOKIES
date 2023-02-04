@@ -1,0 +1,59 @@
+{% extends 'cities/base.html' %}
+{% load static %}
+{% block title %}
+Tourism in Saudi Arabia
+{% endblock %}
+
+
+{% block content %}
+<style>
+  body{ background-image:url("{%static 'images\map1.png'%}");
+     background-repeat: no-repeat;
+     position: relative;
+   }
+
+#hh1{
+    text-align: center;
+    color: rgb(92, 67, 42);
+    font-size: large;
+}
+
+img{height:500px;
+width: 500px;}
+ 
+
+.nav-link {
+   color: rgb(126, 101, 0);
+  
+}
+
+
+.class1{padding: 50px;
+ color: rgb(92, 67, 42);
+text-align: center;}
+</style>
+
+
+
+<h2 class="class1"> Tourism in Saudi Arabia</h2>
+<h1 id="hh1">The Kingdom of Saudi Arabia is the largest country in the Arabian Peninsula</h1>
+<p class="class1">Tourism development is an important driver of growth for the future of Saudi Arabia. It is one of the key pillars at the heart of Vision 2030’s .</p>
+<hr>
+
+<ul class="nav justify-content-center">
+  
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="{% url 'cities:riyadh page' %}">Riyadh</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cities:abha page' %}">Abha</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cities:mekkah page' %}">Mekkah</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'cities:alula page' %}">AlUla</a>
+    </li>
+  </ul>
+  <hr>
+{% endblock %}
