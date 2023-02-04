@@ -1,0 +1,51 @@
+
+{% extends 'main/home.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.rcu.gov.sa/">AlUla</a>
+          </div>
+        </nav>
+     </div>
+
+
+     <div class="col-3">
+      <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/alula.jpg' %}" height="242" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">AlUla</h5>
+          <p class="card-text">هي التي تشعر معها أنك مستكشف حقيقي من أوائل من يتعرف على أحد كنوز الطبيعة، وهذا ما تشعر به تماماُ عند زيارتك لمحافظة العلا، فبالرغم من كل ما تتملكه من طبيعة عجيبة وآثار تعود لأكثر من 7 آلاف عام، وتمتد على مساحة 22 ألف كيلومتراً مربعاً، إلا أنها جديدة على خارطة السياحة العالميةالعلا هي نبع تلك الحضارات</p>
+          <a href="{% url 'main:city/AlUla' %}" class="btn btn-primary">اكتشف العلا</a>
+     </div>
+  </div>
+    
+     
+     
+
+
+ <div id="carouselExample" class="carousel slide">
+   <div class="carousel-inner">
+      <div class="carousel-item active">
+            <img src="{% static 'img/alula.jpg' %}" width="500" height="500" class="d-block w-100" alt="...">
+       </div>
+         <div class="carousel-item">
+            <img src="{% static 'img/aula1.jpg' %}" width="500" height="500" class="d-block w-100" alt="...">
+        </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/aula2.jpg' %}" width="500" height="500" class="d-block w-100" alt="...">
+          </div>
+    </div>
+  </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="{% static 'img/aula1.jpg' %}" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="{% static 'img/aula2.jpg' %}" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+
+    
+
+     {% endblock %}

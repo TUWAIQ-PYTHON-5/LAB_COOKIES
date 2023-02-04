@@ -1,0 +1,54 @@
+{% extends 'main/home.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/abha.jpg' %}" height="242" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">Abha</h5>
+          <p class="card-text">تمتلك مدينة أبها موقعًا مثاليًّا في جنوب غربي السعودية، على ارتفاع 2200م بين قمم جبال السروات، حيث يمنحك موقعها فرصة معانقة السحاب، والتجول بين قممها الجبلية، مترعًا بالدهشة، فيما تنتقل عبر أزمنة تتجاوز مئات السنين، عند مشاهدة القلاع والقصور المشيدة من مكونات بيئتهاالبكر ومع مناورات الضباب في فصل الصيف</p>
+          <a href="{% url 'main:city/Abha' %}" class="btn btn-primary">اكتشف ابها</a>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.visitsaudi.com/ar/see-do/destinations/abha">Abha</a>
+          </div>
+        </nav>
+    </div>
+
+    
+
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/abha.jpg' %}" width="500" height="500" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/abha1.jpg' %}" width="500" height="500" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/abha2.png' %}" width="500" height="500" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="{% static 'img/abha1.jpg' %}" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="{% static 'img/abha.jpg' %}" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+    </div>
+      
+      {% endblock%}
