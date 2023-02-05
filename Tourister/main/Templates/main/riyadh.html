@@ -1,0 +1,48 @@
+{% extends "main/home.html" %}
+
+{% load static %}
+{% block title %} Riyadh Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;"> Discover the Beauty of Riyadh.</h3></p>
+
+ <div class="container" style="width:640px;height:360px">
+    
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+       
+       <div class="carousel-item active">
+         <img src="{% static 'images/riyadh1.jpg' %}" class="d-block w-10" alt="Abha photos" style="width:640x;height:360px">
+       </div>
+       <div class="carousel-item">
+         <img src="{% static 'images/riyadh2.jpg' %}" class="d-block w-10" alt="Abha photos" style="width:640px;height:360px">
+       </div>
+       </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ </div>
+
+<p class = "container fw-lighter" style="text-align: center;width:800px;height:300px; padding: 20px;">
+  Riyadh Arabic: الرياض, romanized: 'ar-Riyāḍ, lit.: 'The Gardens' Najdi pronunciation, formerly known as Hajr al-Yamamah, is the capital and largest city of Saudi Arabia. It is also the capital of the Riyadh Province and the centre of the Riyadh Governorate.
+  It is the largest city on the Arabian Peninsula, and is situated in the center of the an-Nafud desert,
+   on the eastern part of the Najd plateau. The city sits at an average of 600 meters (2,000 ft) above sea level,[4] 
+  and receives around 5 million tourists each year, making it the forty-ninth most visited city in the world and the 6th in the Middle East.
+  Riyadh had a population of 7.6 million people in 2019, making it the most-populous city in Saudi Arabia, 3rd most populous in the Middle East, and 38th most populous in Asia.[2]
+    
+    
+
+  <div class="container" style="text-align: center;width:800px;height:800px; padding: 50px;">
+    <iframe width="684" height="385" src="https://www.bing.com/videos/search?&q=%D9%81%D9%8A%D8%AF%D9%8A%D9%88+%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6&view=detail&mid=2E0C7FB55DCB2486E1152E0C7FB55DCB2486E115&FORM=VDQVAP&ru=%2Fvideos%2Fsearch%3Fq%3D%25d9%2581%25d9%258a%25d8%25af%25d9%258a%25d9%2588%2B%25d9%2584%25d9%2585%25d8%25af%25d9%258a%25d9%2586%25d8%25a9%2B%25d8%25a7%25d9%2584%25d8%25b1%25d9%258a%25d8%25a7%25d8%25b6%26FORM%3DHDRSC3&rvsmid=78729B78454741224D5B78729B78454741224D5B&ajaxhist=0" title=".. الرياض " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+    {% endblock %}
