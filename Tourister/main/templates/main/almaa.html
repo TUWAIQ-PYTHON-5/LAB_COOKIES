@@ -1,0 +1,62 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block title %} Riyadh City {%endblock%}
+
+{% block content %}
+
+<div class="m-2">
+    <h1>welcome to rijal almaa</h1>
+
+    
+    <h3>general information</h3>
+    <p class="text-xl-start">The village of Rijal Almaa is located west of the city of Abha in the Asir region, and its buildings were built closely together from stone, and it consists of several neighborhoods such as: Zur, Al-Hayamah, Al-Manazir, Al-Haifa, Al-Kadha, and Asla.
+        The village gains its importance from its history, as it was the capital of the Emirate of Hali during the reign of Musa al-Kinani in the year 732 AH, which makes its age exceeding almost 700 years. Residential, the people of the region have adopted this juxtaposition in their homes. As they rented the floors to their relatives, which made the village establish the first system of apartments in the region, and among the most prominent forts in it: Riyadh, Razih, Al Jaber, Al Mismar, Al Hawat; The village was considered a military barracks; In view of its high fortification, and the main door of each fort was accommodating for the entry of a camel with its burden, in addition to containing a mosque consisting of a canopy for the qiblah and behind it the courtyard, which its people called: “Al-Suh”, and it is roofed on the eastern and western sides, and the mosque includes an annex that was used to hold meetings and entertain pilgrims and visitors, and the appendix is called: “The Manzala”; The village consists of narrow streets and wide squares.</p>
+</div>
+
+
+
+<div class="m-5" >
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" >
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/7.jpeg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/8.jpeg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/9.jpeg' %}" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</div>
+
+
+<div class="m-5">
+
+    <iframe width="660" height="515" src="https://www.youtube.com/embed/SSwowD3w-x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

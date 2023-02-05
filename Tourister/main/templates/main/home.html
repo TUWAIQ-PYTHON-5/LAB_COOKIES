@@ -1,0 +1,60 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+<!-- <div class="d-flex p-2">
+
+    <img src="{% static 'images/1.jpeg' %}" alt="..."/>
+</div> -->
+
+
+<!-- <img src="{% static 'images/1.jpeg' %}" class="d-block w-10" alt="..."> -->
+
+  <div class="container">
+
+        <h1>welcome to saudi arabia</h1>
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'images/1.jpeg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/2.jpeg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/3.jpeg' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+          <p>The location of the Kingdom of Saudi Arabia, its Islamic traditions and heritage made it an important historical center, in addition to being the birthplace of Islam. Over the past years, the Kingdom has undergone a great cultural transformation, and many places, parks and amusement parks have spread in it. Therefore, one of the sectors that has changed greatly was tourism in the Kingdom of Saudi Arabia. Many tourists go there to see these new facilities and tourist areas.</p>
+          </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}
