@@ -1,0 +1,48 @@
+{% extends "main/home.html" %}
+
+{% load static %}
+{% block title %} Alula Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;"> Discover the Beauty of Alula.</h3></p>
+
+ <div class="container" style="width:640px;height:360px">
+    
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+       
+       <div class="carousel-item active">
+         <img src="{% static 'images/alula1.jpg' %}" class="d-block w-10" alt="alula photos" style="width:640x;height:360px">
+       </div>
+       <div class="carousel-item">
+         <img src="{% static 'images/alula2.jpg' %}" class="d-block w-10" alt="alula photos" style="width:640px;height:360px">
+       </div>
+       </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ </div>
+
+<p class = "container fw-lighter" style="text-align: center;width:800px;height:300px; padding: 20px;">
+    Al-'Ula[1] (Arabic: ٱلْعُلَا al-ʿulā), sometimes stylized in English as AlUla, 
+    is an ancient Arabic oasis city located in Medina province of northwestern Saudi Arabia. 
+    Situated in the Hejaz, a region that features prominently in the history of Islam as well as several pre-Islamic Semitic civilizations, 
+    Al-'Ula was a market city on the historic incense route that linked India and the Gulf to the Levant and Europe.
+    The immediate vicinity contains a unique concentration of precious artifacts, including well-preserved ancient stone
+    inscriptions that illustrate the development of the Arabic language, and a concentration of rock dwellings and tombs that date from the
+    Nabatean and Dedanite periods that coincided with Greco-Roman influence during classical antiquity. Saudi Arabia's first UNESCO World Heritage Site,
+    Hegra (also known as Al-Hijr, or Mada'in Salih), is located 22 km (14 mi) north of the city, in Al-'Ula governorate. Built more than 2,000 years ago by the Nabataeans, Hegra is often compared with its sister city of Petra, in Jordan. Meanwhile, the ancient walled city of Al-'Ula ("Old Town"), situated near the oasis that allowed for its settlement, contains a dense cluster of mud-brick and stone houses.
+    Al-'Ula was also the capital of the ancient Lihyanites (Dedanites).
+    Today, the city of Al-'Ula is within t
+    
+    
+    {% endblock %}

@@ -1,0 +1,41 @@
+{% extends "main/home.html" %}
+
+{% load static %}
+{% block title %} Arar Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;"> Discover the Beauty of Arar.</h3></p>
+
+ <div class="container" style="width:640px;height:360px">
+    
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+        
+       <div class="carousel-item active">
+        <img src="{% static 'images/arar.jpg' %}" class="d-block w-10" alt="alula photos" style="width:640x;height:360px">
+      </div>
+
+       </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ </div>
+
+<p class = "container fw-lighter" style="text-align: center;width:800px;height:300px; padding: 20px; text-align: center;">
+    Arar (Arabic: عرعر ʿArʿar  ['ʕarʕar]) is the capital of Northern Borders Province in Saudi Arabia.
+     It has a population of 145,237 (2004 census).
+    Arar is located in northern Saudi Arabia near the Iraqi border. It is known for its fertile pasture lands which lends itself
+    well to its principal occupation of sheep and camel herding. The population of the entire Northern Borders Province, 
+    including the cities of Rafha, Turayf and Alaoiqilah and suburban villages and their inhabitants, was 320,524 at the 2010 census.
+     Arar serves as a significant supply stop for travelers on the Saudi Arabian highway 85.
+    
+    {% endblock %}
