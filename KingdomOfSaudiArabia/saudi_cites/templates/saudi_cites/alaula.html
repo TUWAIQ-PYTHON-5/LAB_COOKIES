@@ -1,0 +1,50 @@
+{% extends 'saudi_cites/home_page.html' %}
+{% load static %}
+{% block head %}
+  {% block title %} Alaula {% endblock %} 
+  {% block bg %}
+  background-image: url("{% static 'images/a1.jpg' %}");
+  {% endblock %}
+
+  {% endblock %}
+  
+  {% block Nav%} <nav class="navbar" style="background-color:  #503d31; ">{% endblock %}
+  {% block headrGreeting %} Welcome To Alaula  {% endblock %}
+{% block headrGreeting2 %} AlUla is a place of extraordinary human and natural heritage. {% endblock %}
+{% block content %}
+
+    <!-- About Section -->
+
+    <div class="w3-container"  style="background-color: #503d31;" id="info">
+      
+      <h3 class="w3-center" style="color: aliceblue; font-style:initial;">About Alaula</h3>
+      <p class="w3-center w3-large" style="color: aliceblue; font-style:initial;">Activites</p>
+
+      <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-quarter">
+          <p class="w3-large" style="color: aliceblue; font-style:initial;">KHAYBAR HERITAGE TOUR</p>
+          <p style="color: aliceblue; font-style:initial;" >
+            The oasis of Khaybar is one of the oldest areas of human settlement in the Arabian Peninsula. Shrouded in mystery for millennia, Khaybar is now unlocking the secrets of prehistoric Saudi Arabia. A landscape shaped by millions of years of volcanic eruptions with a lush oasis at its centre, its historical legacy has undoubtedly played a pivotal role in shaping the world around us.        </p>
+        </div>
+
+        <div class="w3-quarter">
+          <p class="w3-large"style="color: aliceblue; font-style:initial;" >KHAYBAR VOLCANO CAMP</p>
+          <p style="color: aliceblue; font-style:initial;"> The nature reserve of Harrat Khaybar is an ancient volcanic landscape in one of the most spectacular locations on earth. Here, some of the earliest creations of ancient Arabia continue to be rediscovered on a monumental scale - and today hosts Khaybar Volcano Camp. With this first-of-its-kind experience, guests experience the extraordinary by day and the otherworldly by night. </p>
+        </div>
+
+        <div class="w3-quarter">
+          <p class="w3-large" style="color: aliceblue; font-style:initial;">KHAYBAR HOT AIR BALLOONS</p>
+          <p style="color: aliceblue; font-style:initial;">In a never-been-done-before experience, hot air balloons are coming to Khaybar. Offering a bird’s-eye view of this impressive landscape, some of the most important archaeological marvels of Khaybar are only able to be seen from above</p>
+        </div>
+
+      </div>
+    </div>
+{% endblock %}
+
+
+
+
+{% block Caro %}
+
+
+{% endblock %}
