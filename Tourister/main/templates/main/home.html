@@ -9,16 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <style>
         .light{
-          background-color: rgb(255, 255, 255);
+          background-color: rgb(0, 0, 0);
           color: black;
         }
         .dark{
-          background-color: black;
-          color: rgb(255, 255, 255);
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
         }
       </style>
      </head>
-    <body>
+    <body class="{{ request.COOKIES.mode }}">
         <article class="media" dir="rtl" >
        
            
@@ -37,7 +37,7 @@
             </div>
          </nav>
          
-          <img src="{% static 'img/saudi.jpg' %}"  width="1519" height="400" >
+          <img src="{% static 'img/saudi.jpg' %}"  width="2000" height="400" >
           
           
             {% block content %}
@@ -57,7 +57,6 @@
                         <img src="{% static 'img/riyadh.jpeg' %}" height="240" class="card-img-top" alt="..." />
                         <div class="card-body">
                         <h5 class="card-title">Riyadh</h5>
-                        <p class="card-text"> مدينة الرياض هي عاصمة المملكة العربيةالسعودية والتي لا تتوقف عن النمو والازدهار، ستكتشف مهد ولادة المملكة العربية السعودية، بكنوزها التاريخية المخبئة في القصور القديمة التي احتضنت لحظات التأسيس. يقصدها الزوار من جميع أنحاء العالم لاكتشاف عوالم من التسوق والترفيه والأعمال، </p>
                         <a href="{% url 'main:city/Riyadh' %}" class="btn btn-primary">  اكتشف الرياض  </a>
                     </div>
                     </div>  
@@ -69,7 +68,7 @@
                         <img src="{% static 'img/mekkah.jpg' %}" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Mekkah</h5>
-                        <p class="card-text">تعد زيارة مكة المكرمة أمنية كبيرة للمسلمين من مختلف بقاع الأرض لتلبية فرائض الإسلام ولكونها مسقط رأس النبي محمد (ص) والمدينة التي أُنزل فيها القرآن الكريم.   يعج الحرم المكي بالزوار خلال جميع ساعات اليوم. كما أن المدينة التاريخية في مكة ثرية بالمتاحف و المعالم التي شهدت أهم الأحداث في صدر الإسلام</p>
+                        
                         <a href="{% url 'main:city/Mekkah' %}" class="btn btn-primary">اكتشف مكة المكرمة</a>
                         </div>
                     </div>
