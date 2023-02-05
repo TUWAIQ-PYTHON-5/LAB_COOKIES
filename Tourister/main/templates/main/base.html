@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(73, 74, 74);
+        }
+
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .topnav a:hover {
+        background-color: #ddd;
+        color: rgb(119, 118, 118);
+        }
+
+        .topnav a.active {
+        background-color: #eba1f5;
+        color: white;
+        }
+
+        .light{
+        background-color: aliceblue;
+        color: black;
+        }
+
+        .dark{
+        background-color: black;
+        color: aliceblue;
+        }
+
+       
+        </style>
+    <title>{% block title %}  {% endblock%}</title>
+    
+</head>
+
+
+
+  <body class="{{ request.COOKIES.mode }}" >
+    <div class="topnav">
+        <h2>
+        <a class="active" href="/">Tourister</a>
+        <!--a href="#home">Home</a>
+        <a href="#books">News</a>
+        <a href="#about">About</a-->
+        {% for item in citiesList %}
+        <a href="/{{item}}">{{item}}</a>
+        {% endfor %}
+        </h2>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+          <a href="{% url 'main:mode_dark'%}" class="btn {% if request.COOKIES.mode == 'dark'%} btn-primary {% else %} btn-secondary {% endif %}">Dark</a>
+          <a href="{% url 'main:mode_light'%}" class="btn {% if request.COOKIES.mode == 'light'%} btn-primary {% else %} btn-secondary {% endif %}">Light</a>
+        </div>
+
+    </div>
+    <div class="container-fluid p-3">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <!--a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none text-align-center">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+             
+            </a-->
+             <!--h1 style="text-align: center;">{{phrase}}</h1-->
+             <img src='/static/images/logo.png' alt='logo image' width="200" height="100">
+            <!--ul class="nav nav-pills">
+              <li class="nav-item"><a href="/" class="nav-link" aria-current="home_page">Home</a></li>
+              <li class="nav-item"><a href="{% url 'main:home_page' %}" class="nav-link">Home Page</a></li>
+
+            </ul-->
+        </header>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="/static/images/Riyadh01.jpg" alt="Card image cap" width="400" height="300">
+        <div class="card-body">
+          <h5 class="card-title">Riyadh</h5>
+          <p class="card-text">Pack Up The Family & Explore One Of Riyadh's Natural Wonders At Al Kharrarah National Park. For Outdoor Enthusiasts To Break A Sweat, This Is The Perfect Time To Discover Riyadh.</p>
+          <p class="card-text"><small class="text-muted">Visit The City page for more about it..</small></p>
+        </div>
+        <a href="/Riyadh/" type="button" class="btn btn-success">Visit</a>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="/static/images/Jeddah01.jpg" alt="Card image cap" width="400" height="300">
+        <div class="card-body">
+          <h5 class="card-title">Jeddah</h5>
+          <p class="card-text">A place that instantly and seamlessly delights and revitalizes your heart. It is precisely where visitors fall deeply captive in Jeddah.</p>
+          <p class="card-text"><small class="text-muted">Visit The City page for more about it..</small></p>
+        </div>
+        <a href="/Jeddah/" type="button" class="btn btn-success">Visit</a>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="/static/images/Taif01.jpg" alt="Card image cap" width="400" height="300">
+        <div class="card-body">
+          <h5 class="card-title">Taif</h5>
+          <p class="card-text">Al-Taif - also known as the City of Roses - are decorated with a blanket of pink hues of the same exclusive rose.</p>
+          <p class="card-text"><small class="text-muted">Visit The City page for more about it..</small></p>
+        </div>
+        <a href="/Taif/" type="button" class="btn btn-success">Visit</a>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="/static/images/Ula01.webp" alt="Card image cap" width="400" height="300">
+        <div class="card-body">
+          <h5 class="card-title">Al-Ula</h5>
+          <p class="card-text">AlUla here combine legendary heritage sites, including Hegra, with outdoor adventure amidst AlUla's beautiful desert landscape.</p>
+          <p class="card-text"><small class="text-muted">Visit The City page for more about it..</small></p>
+        </div>
+        <a href="/Ula/" type="button" class="btn btn-success">Visit</a>
+      </div>
+    </div>
+
+
+  </body>
+</html>
