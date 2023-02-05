@@ -25,20 +25,16 @@ def alula_page(request : HttpRequest):
    
     return render(request , "main/alula.html")
 
-
-
-
 def set_dark_mode(request : HttpRequest):
 
-    response = redirect("main:base_page")
+    response = redirect("main:home_page")
     response.set_cookie("mode", "dark", max_age=60*60*24*7)
 
     return response
 
-
 def set_light_mode(request : HttpRequest):
 
-    response = redirect("main:base_page")
+    response = redirect("main:home_page")
     response.set_cookie("mode", "light", max_age=60*60*24*7)
 
     return response  
