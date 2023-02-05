@@ -5,6 +5,7 @@ from django.http import HttpRequest, HttpResponse
 
 
 def home(request : HttpRequest):
+    cookies = request.COOKIES
 
     return render(request , "main/home.html" )
 
@@ -48,15 +49,14 @@ def cookes(request : HttpRequest):
 
 def set_dark_mode(request : HttpRequest):
 
-    response = redirect("main:index_page")
+    response = redirect("main:home")
     response.set_cookie("mode", "dark", max_age=60*60*24*7)
 
     return response
 
 
 def set_light_mode(request : HttpRequest):
-
-    response = redirect("main:index_page")
+    response = redirect("main:home")
     response.set_cookie("mode", "light", max_age=60*60*24*7)
 
     return response
