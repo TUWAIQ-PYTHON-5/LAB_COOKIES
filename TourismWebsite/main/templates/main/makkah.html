@@ -1,0 +1,42 @@
+{% extends "main/home.html" %}
+{% load static %}
+{% block title %} Mekkah Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;">  Makkah</h3></p>
+
+    
+ <div class="container" style="width:640px;height:360px;padding: 15px;">
+    
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item ">
+         <img src="{% static 'images/makkah1.jpg' %}" class="d-block w-5" alt="Mekkah photos" style="width:640px;height:360px">
+       </div>
+       <div class="carousel-item active">
+         <img src="{% static 'images/makkah2.jpg' %}" class="d-block w-100" alt="Mekkah photos" style="width:640px;height:360px">
+       </div>
+       <div class="carousel-item active">
+        <img src="{% static 'images/makkah3.jpg' %}" class="d-block w-100" alt="Mekkah photos" style="width:640px;height:360px">
+      </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ </div>
+
+ <p class = "container fw-lighter" style="text-align: center;width:600px;height:250px; padding: 20px;">
+  
+    Makkah is considered the holy capital of Muslims, and it includes the purest parts of the earth, which is the Kaaba.
+  </p>
+
+
+    {% endblock %}
