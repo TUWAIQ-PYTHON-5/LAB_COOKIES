@@ -1,0 +1,41 @@
+{% extends "main/home.html" %}
+
+{% load static %}
+{% block title %} Abha Page {% endblock %}
+
+
+ {% block content %}
+
+ 
+ <p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;">ABHA</h3></p>
+
+ <div class="container" style="width:640px;height:360px">
+    
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item ">
+         <img src="{% static 'images/abha1.JPG' %}" class="d-block w-5" alt="Abha photos" style="width:640px;height:360px">
+       </div>
+       <div class="carousel-item active">
+         <img src="{% static 'images/abha2.JPG' %}" class="d-block w-100" alt="Abha photos" style="width:640px;height:360px">
+       </div>
+       <div class="carousel-item">
+         <img src="{% static 'images/abha3.JPG' %}" class="d-block w-100" alt="Abha photos" style="width:640px;height:360px">
+       </div>
+       </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ </div>
+
+<p class = "container fw-lighter" style="text-align: center;width:800px;height:300px; padding: 20px;">
+
+    The city of Abha represents the main entrance to the Asir National Park, which extends from the sea to the highest mountain peak in the Kingdom.  </p>
+
+    {% endblock %}

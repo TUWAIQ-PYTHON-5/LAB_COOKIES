@@ -1,0 +1,37 @@
+{% extends "main/home.html" %}
+{% load static %}
+{% block title %} Riyadh Page {% endblock %}
+
+
+{% block content %}
+<p> <h3 class = "fw-lighter" style="text-align: center; padding: 20px; margin: 15;">Riyadh </h3></p>
+<p class = "container fw-lighter" style="text-align: center;width:800px;height:400px; padding: 20px;">Tourism in Riyadh is considered one of the most
+      important tourism cities in Saudi Arabia, 
+      as it is the capital and the most important city in it,
+      and the tourist places vary from historical landmarks, parks and entertainment places</p>
+
+<div class="container" style="width:640px;height:360px">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner" >
+           <div class="carousel-item active">
+             <img src="{% static 'images/riyadh1.jpg' %}" class="d-block w-1000" alt="..." style="width:640px;height:360px">
+           </div>
+           <div class="carousel-item ">
+             <img src="{% static 'images/riyadh2.jpg' %}" class="d-block w-1000" alt="..." style="width:640px;height:360px">
+           </div>
+           <div class="carousel-item ">
+             <img src="{% static 'images/riyadh3.jpg' %}" class="d-block w-1000" alt="..." style="width:640px;height:360px">
+           </div>  
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+         
+       </div>
+     </div>
+{% endblock %}
